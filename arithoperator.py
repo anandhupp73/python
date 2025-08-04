@@ -1,0 +1,11 @@
+a=3
+b=5
+d=7.6
+f=3
+c=a+b
+e=d//a
+print(c,e)
+g=a**f
+print(g)
+h=b/f
+print(h)
