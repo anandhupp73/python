@@ -1,0 +1,7 @@
+t=(1,2,3,3,4)
+print(t.index(3))
+print(t.count(3))
+t2=list(t)
+t2.append(5)
+t=tuple(t2)
+print(t)
