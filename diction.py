@@ -1,0 +1,16 @@
+d={'name':'manu','age':28}
+d['name']='akhil'
+d['class']=10
+print(d)
+print(d.get('name'))
+d.pop('name')
+d.popitem()
+print(d)
+p={'name':'new','age':20}
+print(p.items())
+print(p.keys())
+print(p.values())
+p.popitem()
+print(p)
+p.popitem()
+print(p)

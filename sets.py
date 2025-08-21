@@ -1,0 +1,12 @@
+s={1,2,3,4,5}
+s.add(6)
+s.update({7,8,9})
+print(s)
+s.pop()
+print(s)
+s.remove(3)
+print(s)
+s.discard(11)
+print(s)
+s.discard(9)
+print(s)

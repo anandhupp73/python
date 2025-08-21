@@ -1,0 +1,10 @@
+d={'name':'manu','age':23}
+d.update({'name':'akhil'})
+d.update({'class':10})
+print(d)
+a=d.copy()
+d.clear()
+print(d)
+print(a)
+a.setdefault('weight')
+print(a)
