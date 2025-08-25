@@ -1,0 +1,5 @@
+price = lambda p,d:p*(1-d/100)
+print(price(100,20))
+print(price(250,15))
+print(price(75,10))
+print(price(500,25))

@@ -61,10 +61,62 @@ while(True):
                                                       books.remove(i)
                                                 else:
                                                       print("id not found to delete : ")
-                                          
+                                    elif ch1==4:
+                                          if not books:
+                                                print("no books available")
+                                          else:
+                                                for i in books:
+                                                      print(i)
+                                    elif ch1==5:
+                                          if not users:
+                                                print("no users")
+                                          else:
+                                                for i in users:
+                                                      print(i)     
                                     elif ch1==6:
                                           break
                         elif admin_ch==3:
                               continue
+      elif ch==2:
+            print('''1.User Sign Up
+                  2.user login
+                  3.back
+                  '''
+            )
+            userch=int(input("enter user choise"))
+            if userch==1:
+                  uname = input("enter username")
+                  pwd = input("enter password")
+                  users.append({"username":uname,"password":pwd,"taken":[]})
+                  print("user registered succesfully")
+            elif userch==2:
+                  uname = input("enter user name")
+                  pwd = input("enter password")
+                  for i in users:
+                        if i["username"]==uname and i["password"]==pwd:
+                               print("login succuesfull")
+                        else:
+                              print("login error")
+                        while(True):
+                              ('''
+                               1.view books
+                               2.take books
+                               3.return books
+                               4.view taken books
+                               ''')      
+                              ch2=int(input("enter choise"))
+                              if ch2==1:
+                                    if not books:
+                                          print("no books available")
+                                    else:
+                                          for i in books:
+                                                print(i)
+                              elif ch2==2:
+                                    id=input("enter book id")
+                                    for book in books:
+                                          if book[bookid]==id and book["status"]=="available":
+                                                
+                                                
+      
       elif ch==3:
              break
