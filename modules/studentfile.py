@@ -10,3 +10,4 @@ for i in range(n):
         f.write(f"Name: {name},\n")
 
 
+
