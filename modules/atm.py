@@ -1,10 +1,13 @@
 class atm:
-    def __init(self,balance=0):
+    def __init__(self):
         self.pinnumber=4324
-        self.balance=balance
+        self.balance=0
     def verifypin(self):
         pin=int(input("enter pin"))
-        pin == self.pinnumber
+        if pin == self.pinnumber:
+            return True
+        else:
+            return False
     def deposit(self):
         if self.verifypin():
                 amount=int(input("enter amount"))
@@ -30,4 +33,23 @@ class atm:
             print("balance amount = ",self.balance)
         else:
             print("incorrect pin")        
-        
+    def choise(self):
+        while(True):
+            print('''1.deposit
+                 2.withdrawal
+                 3.balance
+                 4.exit''')
+            choise=int(input("enter choise : "))    
+            if choise==1:
+                self.deposit()
+            elif choise==2:
+                self.withdrawal()
+            elif choise==3:
+                self.balancecheck()
+            elif choise==4:
+                break
+            else:
+                print("invalid input")
+test=atm()
+test.choise()
+            
